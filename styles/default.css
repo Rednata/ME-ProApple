@@ -10,7 +10,7 @@ html {
 
 body {
   min-width: 320px;
-  font-family: "SF UI Display", sans-serif;
+  font-family: "SF UI Display", sans-serif; 
   font-size: 16px;
   font-weight: 400;
   color: #000000;
@@ -43,7 +43,26 @@ h1, h2, h3, p {
 }
 
 .container {
-  max-width: 1440px;
-  padding: 0 135px;
+  max-width: 1324px;  /*1440-2*135=1170+2*77(padding for 1024) = 1324px */
+  padding: 0 15px;
   margin: 0 auto;
 }
+
+@media(min-width: 1440px) {
+.container {
+  padding: 0 15px;
+  }
+}
+
+@media(min-width: 768px) {
+  .container {
+    padding: 0 34px;
+  }
+}
+
+@media(min-width: 1024px) {
+.container {
+  padding: 0 77px;
+  }
+}
+
